@@ -42,7 +42,7 @@ public class PostDAOTest {
 			System.out.println("comentarios:" + post.getComentarios());
 			System.out.println("categorias:" + post.getCategorias());
 			
-			Assert.assertNotNull("El método para buscar post regresa datos vacios",post);
+			Assert.assertNotNull("El metodo para buscar post regresa datos vacios",post);
 		}
 		
 		@Test
