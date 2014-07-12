@@ -11,7 +11,7 @@ public class PostForma {
 
 	private Integer id;
 	
-	//valida que una colección de Java tenga al menos
+	//valida que una coleccion de Java tenga al menos
 	//un elemento
 	@NotEmpty
 	private String titulo;

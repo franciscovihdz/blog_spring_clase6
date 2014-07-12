@@ -84,7 +84,7 @@ public class HibernatePostDAO implements PostDAO {
 		Criteria criterio = sesion.createCriteria(Post.class);
 		
 		//AGREGAMOS CRITERIOS DE BUSQUEDA
-		//PRIMER ARGUMENTO DE LIKE (EN GENERL DE LA RESTRICCIÓN)
+		//PRIMER ARGUMENTO DE LIKE (EN GENERL DE LA RESTRICCION)
 		//ES LA PROPIEDAD DE LA ENTIDAD A BUSCAR
 		criterio.add(Restrictions.like("titulo", "%" + titulo + "%"));
 		List<Post> postsEncontrados = criterio.list();
@@ -102,7 +102,7 @@ public class HibernatePostDAO implements PostDAO {
 		Criteria criterio = sesion.createCriteria(Post.class);
 		
 		//AGREGAMOS CRITERIOS DE BUSQUEDA
-		//PRIMER ARGUMENTO DE LIKE (EN GENERL DE LA RESTRICCIÓN)
+		//PRIMER ARGUMENTO DE LIKE (EN GENERL DE LA RESTRICCION)
 		//ES LA PROPIEDAD DE LA ENTIDAD A BUSCAR
 		criterio.add(Restrictions.not(Restrictions.like("titulo", "%" + titulo + "%")));
 		List<Post> postsEncontrados = criterio.list();
