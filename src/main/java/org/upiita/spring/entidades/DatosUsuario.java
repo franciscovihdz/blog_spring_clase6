@@ -25,7 +25,7 @@ public class DatosUsuario {
 	@Column(name = "fecha_registro")
 	private Date fechaRegistro;
 	
-	//EN LA ENTIDAD QUE NO ES DUEÑA VA LA PROPIEDAD MAPPEDBY
+	//EN LA ENTIDAD QUE NO ES DUENA VA LA PROPIEDAD MAPPEDBY
 	//MAPPEDBY = Nombre de la propiedad de la otra clase con la
 	//que estamos mapeando a esta clase.
 	@OneToOne(mappedBy="datosUsuario")

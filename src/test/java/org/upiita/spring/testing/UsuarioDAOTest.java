@@ -17,13 +17,13 @@ public class UsuarioDAOTest {
 
 	//HAY DOS TIPOS DE PRUEBAS
 	//PRUEBA UNITARIA()
-	//PRUEBAS DE INTEGRACION(BD O CHECAR QUE LA APLICACIÓN WEB FUNCIONA)
+	//PRUEBAS DE INTEGRACION(BD O CHECAR QUE LA APLICACION WEB FUNCIONA)
 	private static ApplicationContext contexto;
 			
 	private static UsuarioDAO usuarioDAO;
 			
 	@BeforeClass
-	//ESTE MÉTODO SE EJECUTA ANTES DE TODOS LOS TEST
+	//ESTE METODO SE EJECUTA ANTES DE TODOS LOS TEST
 	public static void inicializar(){
 				
 		contexto = new ClassPathXmlApplicationContext("dao-context-testing.xml");
@@ -89,5 +89,5 @@ public class UsuarioDAOTest {
 		System.out.println("Posts Usuario:" + usuarioBD.getPosts());
 	}
 	// TO DO
-	//HACER UNA FUNCIÓN PARA QUE APARTIR DE DATOS USUARIO SE OBTENGA EL USUARIO
+	//HACER UNA FUNCION PARA QUE APARTIR DE DATOS USUARIO SE OBTENGA EL USUARIO
 }

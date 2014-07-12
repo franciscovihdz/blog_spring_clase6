@@ -23,7 +23,7 @@ public class LoginFallidoManejador extends SimpleUrlAuthenticationFailureHandler
 		if(loginsFallidos == null){
 			loginsFallidos = 1;
 		}else{
-			//SI YA EXISTE LA VARIABLE EN LA SESIÓN
+			//SI YA EXISTE LA VARIABLE EN LA SESION
 			//INCREMENTAMOS LA VARIABLE
 			loginsFallidos++;
 		}
