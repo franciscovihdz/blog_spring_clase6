@@ -19,13 +19,13 @@ public class PostDAOTest {
 
 		//HAY DOS TIPOS DE PRUEBAS
 		// PRUEBA UNITARIA()
-		// PRUEBAS DE INTEGRACION(BD O CHECAR QUE LA APLICACIÓN WEB FUNCIONA)
+		// PRUEBAS DE INTEGRACION(BD O CHECAR QUE LA APLICACION WEB FUNCIONA)
 		private static ApplicationContext contexto;
 		
 		private static PostDAO postDAO;
 		
 		@BeforeClass
-		//ESTE MÉTODO SE EJECUTA ANTES DE TODOS LOS TEST
+		//ESTE METODO SE EJECUTA ANTES DE TODOS LOS TEST
 		public static void inicializar(){
 			
 			contexto = new ClassPathXmlApplicationContext("dao-context-testing.xml");
@@ -87,8 +87,8 @@ public class PostDAOTest {
 			
 			//Assert.assertNotNull(postsEncontrados);
 			System.out.println("Post Encontrados" +  postsEncontrados);
-			//NOTEMPTY REVIS QUE LA COLECIÓN NO SEA NULA Y QUE NO VENGA VACIA
-			//ES DECIR QUE TENGA UNO O MÁS ELEMENTOS
+			//NOTEMPTY REVIS QUE LA COLECION NO SEA NULA Y QUE NO VENGA VACIA
+			//ES DECIR QUE TENGA UNO O MAS ELEMENTOS
 			notEmpty(postsEncontrados);
 		}
 		
